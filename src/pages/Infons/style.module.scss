@@ -1,0 +1,32 @@
+@import '../../UI/variables';
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1120px;;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: -150px;
+    padding: 60px 0;
+    position: relative;
+    z-index: 10;
+    border: 1px solid #DCE9E2;
+    border-radius: 6px;
+    div{
+        min-width: 300px;
+        text-align: center;
+        border-right: 1px solid $color-purple;
+ 
+        padding-right: 20px;
+        margin: 0 auto;
+        p{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        span{
+            color: $color-purple;
+            font-weight: bold;
+        }
+
+    }
+}

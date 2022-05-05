@@ -1,0 +1,57 @@
+@import '../../UI/variables';
+
+.header{
+    @include container();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+
+    .header__title{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .nav{
+        .nav__list{
+            list-style: none;
+            display: flex;
+            gap: 32px;
+            font-weight: 700;
+            .nav__item{
+                button{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: $color-purple;
+                    padding: 10px 24px;
+                    border: 1px solid transparent;
+                    border-radius: 40px;
+                    transition: 0.3s;
+                    outline: none;
+                    &:focus{
+                        background-color: $color-purple;
+                        color: white;
+                    }
+                }
+            }
+
+        }
+    }
+    .nav__button{
+        min-width: 185px;
+        min-height: 45px;
+        border: 1px solid $color-purple;
+        box-sizing: border-box;
+        border-radius: 40px;
+        color: $color-purple;
+        background-color: transparent;
+        transform: scale(1);
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+    }
+    
+}

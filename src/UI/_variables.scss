@@ -1,0 +1,33 @@
+//COLORS
+$color-purple: #5F3DC4;
+$color-purple-background: #E5DBFF;
+$color-main-text-color: #061800;
+$color-text-secondary : #384633;
+$color-text-white: #FFFFFF;
+ 
+//FONT SIZE
+$font-title-main: 52px;
+$font-section: 40px;
+
+//BREAKPOINT
+$break-point: 760px;
+//MIXINS
+
+//button
+@mixin mainButton {
+    min-height: 52px;
+    min-width: 263px;
+    padding: 16px, 32px, 16px, 32px;
+    background: #5F3DC4;
+    border-radius: 40px;
+    color: $color-text-white;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+@mixin container {
+    padding: 0 123px;
+    @media (max-width: $break-point) {
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,53 @@
+@import "../../UI/variables";
+
+.mainBanner{
+
+    padding-left: 0;
+    display: flex;
+    gap: 40px;
+    min-height: 300px;
+    padding-top: 80px;
+    background-color: $color-purple-background;
+    div{
+        max-width: 600px;
+        .mainBanner__welcome{
+            text-transform: uppercase;
+            color: $color-purple;
+            padding-bottom: 16px;
+            font-size: 16px;
+        }
+        .mainBanner__title{
+            color: $color-main-text-color;
+            font-size: $font-title-main;
+        }
+        .mainBanner__description{
+            color: $color-text-secondary;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .mainBanner__staks{
+            color: $color-purple;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .mainBanner__aboult{
+            color: $color-text-secondary;
+            font-size: 18px;
+            line-height: 26px;
+            padding-top: 30px;
+        }
+    }
+
+    .mainBanner__image{
+        max-height: 547px;
+    }
+}
+@media (max-width: 760px) {
+    .mainBanner{
+        flex-direction: column;
+        margin: 0 auto;
+        div{
+            padding: 0 20px;
+        }
+    }
+}
